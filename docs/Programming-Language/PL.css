@@ -1,0 +1,418 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: wheat;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    
+}
+.back-btn{
+    margin: 20px 0 20px 30px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #9d4edd;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    margin: 70px 0 0 0;
+    color: #ff9100;
+}
+h6{
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    font-size: 23px;
+    margin: 70px 0 300px 30px;
+}
+
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin: 50px 0 50px 50px; 
+  }
+
+  .vid{
+    width: 1300px;
+    height: 500px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 0 50px 0 0 ;
+    box-shadow: 8px 9px rgba(0, 0, 0, 0.2);
+  }
+  .ratings {
+    font-size: 20px;
+    margin: 20px 0 0 25px;
+  }
+  
+  .rating-star {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .rating-star.active, .rating-star:hover {
+    color: gold;
+  }
+  
+  .rating-result {
+    margin-left: 10px;
+    font-style: italic;
+  }
+  
+  .comments-section {
+    font-size: 20px;
+    margin: 20px 0 0 25px;
+  }
+  
+  .comment-input {
+    width: 1200px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: x-large;
+  }
+  .comment-input::placeholder{
+    color: rgb(255, 255, 255);
+  }
+  
+  .submit-comment {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .submit-comment:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .comments-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .comments-list li {
+    background-color: rgba(255,255,255,0.1);
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .vid-heading{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .para{
+    font-size: 20px;
+    margin: 20px 0 0 25px;
+  }
+.head-container{
+    border: 2px solid #168aad;
+    height: 500px;
+    background-color: #3c096c;
+    margin: 20px 0px 30px 0px;
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: #ffffff; /* Changed to white for better contrast */
+  min-width: 600px;
+  background: black;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(20px);
+  color: white;
+  z-index: 1000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  margin-left: 20px;
+}
+
+.left{
+  display: flex;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.btn img {
+  height: 20px;
+}
+
+.search-container{
+  width: 260px; /* Full width */
+  height: 26px; /* Height of the search bar */
+  margin-right: 40px;
+  background-color: rgba(163, 159, 159, 0.212); /* Light transparent background */
+  display: flex;
+  border: 5px solid transparent;
+  border-radius: 13px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search{
+  height: 25px;
+}
+
+.search-bar {
+  width: 225px;
+  height: 20px;
+  margin-bottom: 1px;
+  background-color: rgba(255, 255, 255, 0.274);
+  color: white; /* Text color */
+  font-size: 15px; /* Font size */
+  padding: 2px 2px 2px 3px;
+  border-radius: 10px;;
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder text color */
+}
+
+.head-container{
+  height: 100vh;
+  width: 100%;
+  background: rgb(170,20,106);
+  background: linear-gradient(0deg, rgb(153, 20, 170) 0%, rgba(0,0,0,1) 100%);
+  margin: 0;
+}
+
+h1 {
+  text-align: left;
+  font-size: 40px;
+  margin: 100px 0 0 20px;
+  color: rgb(255, 123, 15); /* Updated header color */
+}
+
+p {
+  font-size: 23px;
+  margin: 30px 40px 0 40px;
+  color: #ecf0f1; /* Changed to light gray for contrast */
+}
+
+.videos{
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgb(153, 20, 170) 0%, rgb(107, 6, 133) 55%, rgb(60, 2, 68) 100%);
+  margin: 40px 40px;
+}
+
+.video-slot{
+  display: flex;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(25, 3, 36, 0.596);
+}
+
+.video-container {
+  padding: 50px; /* Center the video container */
+}
+
+.vid {
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Lightened border for better visibility */
+  border-radius: 20px;
+  margin: 0 50px 0 0;
+  box-shadow: 8px 9px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+}
+
+.ratings {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  color: #ecf0f1; /* Changed to light gray for contrast */
+}
+
+.rating-star {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rating-star.active, .rating-star:hover {
+  color: gold;
+}
+
+.rating-result {
+  font-style: italic;
+}
+
+.comments-section {
+  font-size: 20px;
+  color: #ecf0f1; /* Changed to light gray for contrast */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-input {
+  width: 300px;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.5); /* Updated for better visibility */
+  color: #ffffff; /* Changed to white for contrast */
+  font-size: x-large;
+}
+
+.comment-input::placeholder {
+  color: #bdc3c7; /* Lightened placeholder text */
+}
+
+.submit-comment {
+  padding: 5px 10px;
+  width: 200px;
+  background-color: transparent;
+  color: #ffffff; /* Changed to white for better visibility */
+  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submit-comment:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.comments-list li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.vid-heading {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+
+@media (max-width: 1016px) {
+  .head-container {
+    height: auto;
+    font-size: 0.5rem;
+    padding: 20px;
+  }
+
+  .video-slot {
+      flex-direction: column; /* Stack left and right sections vertically */
+      align-items: center; /* Center align the content */
+  }
+
+  .video-slot .left, 
+  .video-slot .right {
+      width: 80%; /* Set width to 80% for better spacing */
+      margin-bottom: 20px; /* Add margin to create some space between elements */
+  }
+
+  /* Adjust the iframe (video) size */
+  .video-slot .left .vid {
+      width: 100%; /* Set the video to full width within its parent */
+      height: auto; /* Keep the aspect ratio */
+  }
+
+  /* Adjust text and content on the right side */
+  .video-slot .right .para {
+      font-size: 1rem; /* Adjust the font size for readability */
+  }
+
+  /* Optional: Adjust button sizes or other elements */
+  .video-slot .right .submit-comment {
+      width: 100%; /* Full width for comment button */
+      padding: 10px; /* Add padding for a more user-friendly experience */
+  }
+}
+
+.btn, .submit-comment {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover, .submit-comment:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+.delete-comment {
+  padding: 5px 10px; /* Space inside the button */
+  background-color: transparent; /* Transparent background */
+  color: #ff4d4d; /* Red color for the delete button */
+  border: 1px solid rgba(255, 0, 0, 0.5); /* Light red border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 15px; /* Font size */
+  margin-left: 10px; /* Space between comment text and button */
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.delete-comment:hover {
+  background-color: rgba(255, 0, 0, 0.1); /* Light red background on hover */
+  color: #ff0000; /* Darker red text on hover */
+  border-color: rgba(255, 0, 0, 0.8); /* Darker red border on hover */
+}
+
+.delete-comment:active {
+  background-color: rgba(255, 0, 0, 0.2); /* Darker background on click */
+  color: #cc0000; /* Even darker text on click */
+}
