@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <img src="CAmpus-removebg-preview.png" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li> <!-- Link to Home section -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#topic">Courses</a></li> <!-- Link to Topic section -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">  <!-- Section ID for Home -->
+            <div class="heading">CampusConnect</div>
+            <div class="inter">____________________________________________</div>
+            <div class="subtitle">"Innovating Faster Than We Can Study" ~ THE BOYS</div>
+        </section>
 
+        <section id="about">
+            <div id="why">
+                <div class="why-div">
+                    <img src="AI__2_-removebg-preview.png" class="i">
+                    <div class="reason">
+                        <h1>Interactive Classes</h1>
+                        <p>Engaging students through real-time participation, fostering active learning and collaboration</p>
+                    </div>
+                </div>
+                <div class="why-div">
+                    <img src="AI__3_-removebg-preview.png" class="i">
+                    <div class="reason">
+                        <h1>Updated Currriculum</h1>
+                        <p>Integrating practical skills and real-world applications, preparing students to meet current market demands</p>
+                    </div>
+                </div>
+                <div class="why-div">
+                    <img src="AI__4_-removebg-preview.png" class="i">
+                    <div class="reason">
+                        <h1>Feedback</h1>
+                        <p>Enchancing quality by incorporating real-time user insights for continuous improvement</p>
+                    </div>
+                </div>
+                <div class="why-div">
+                    <img src="AI__5_-removebg-preview.png" class="i">
+                    <div class="reason">
+                        <h1>Networking</h1>
+                        <p>Fostering connections by engaging in discussions, sharing insights, and building relationships in online communities</p>
+                    </div>
+                </div>
+            </div>
+            <div id="info">
+                <div class="circle">
+                    <h1>About us</h1>
+                    <p>Welcome to Campus Connect!<br>We are dedicated to fostering a vibrant campus community by facilitating communication among students and faculty. Our platform enables seamless sharing of resources, announcements, and events, creating a dynamic space for collaboration and engagement.<br>Join us to connect, learn, and thrive together!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="topic"> <!-- Section ID for Topic -->
+            <h2 class="topic">What Do You Want To Learn Today?</h2>
+            <div class="content-options">
+                <button class="content-type" onclick="window.location.href='/Programming-Language/index.html'" >
+                    <img src="Untitled_design__1_-removebg-preview.png" class="icon">
+                    <div class="course">PROGRAMMING<br>LANGUAGES</div>
+                </button>
+                <button class="content-type" onclick="window.location.href='/Data-Structures-And-Algorithms/index.html'">
+                    <img src="Untitled_design__2_-removebg-preview.png" class="icon">
+                    <div class="course">DATA STRUCTURES<br>AND ALGORITHMS</div>
+                </button>
+                <button class="content-type" onclick="window.location.href='/Operating-System/index.html'">
+                    <img src="Untitled_design__3_-removebg-preview.png" class="icon">
+                    <div class="course">OPERATING<br>SYSTEMS</div>
+                </button>
+                <button class="content-type" onclick="window.location.href='/Internet-Of-Things/index.html'">
+                    <img src="AI__1_-removebg-preview.png" class="icon">
+                    <div class="course">INTERNET OF<br>THINGS</div>
+                </button>
+                <button class="content-type" onclick="window.location.href='/Database-Management-System/index.html'">
+                    <img src="Untitled_design__5_-removebg-preview.png" class="icon">
+                    <div class="course">DATABASE<br>MANAGEMENT</div>
+                </button>
+                <button class="content-type" onclick="window.location.href='../Artificial-Intelligence/index.html'">
+                    <img src="AI-removebg-preview.png" class="icon">
+                    <div class="course">ARTIFICIAL<br>INTELLIGENECE</div>
+                </button>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h3 class="topic">Contact Us</h3>
+            <p>If you have any questions or feedback, feel free to reach out:</p>
+            <p>Email: <a href="mailto:sakibmukhtar7044@gmail.com">sakibmukhtar7044@gmail.com</a></p>
+            <p>Phone: +91 8910258468</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <img src="CAmpus-removebg-preview.png" class="logo">
+            <p>© 2024 CampusConnect. All Rights Reserved.</p>
+            <ul class="social-icons">
+                <li><a href="//www.facebook.com/sakib.mukhtar.94"><img src="social.png" class="social"></a></li>
+                <!-- <li><a href="#"><img src="social (1).png" class="social"></a></li> -->
+                <li><a href="https://www.instagram.com/sakib_mukhtar/profilecard/?igsh=MTg1YnVkdGc5Z3Bwbg=="><img src="social (2).png" class="social"></a></li>
+                <li><a href="https://www.linkedin.com/in/sakib-mukhtar-793869322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="social (3).png" class="social"></a></li>
+                <li><a href="https://github.com/Sakib70e"><img src="github.png" class="social"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="CampusConnect.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
